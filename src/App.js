@@ -59,7 +59,7 @@ class App extends Component {
     const filteredContacts = this.getFilteredContacts();
 
     return (
-      <>
+      <div className={s.wrapper}>
         <Section>
           <h1 className={s.title}>Phonebook</h1>
           <Form onSubmit={this.addContact} />
@@ -73,7 +73,7 @@ class App extends Component {
             onDeleteContact={this.deleteContact}
           />
         </Section>
-      </>
+      </div>
     );
   }
 }
